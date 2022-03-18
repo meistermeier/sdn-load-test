@@ -25,7 +25,7 @@ public class Neo4jConfiguration extends AbstractNeo4jConfig {
 
 	private Neo4jContainer<?> neo4jContainer() {
 		Neo4jContainer<?> neo4jContainer = new Neo4jContainer<>("neo4j:4.4")
-//				.withReuse(true)
+				.withReuse(true)
 				.withoutAuthentication();
 		neo4jContainer.start();
 		return neo4jContainer;
