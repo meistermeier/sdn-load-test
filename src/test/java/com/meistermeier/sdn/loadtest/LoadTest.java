@@ -21,13 +21,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 class LoadTest {
 
 	@Test
-	@Timeout(10)
+	@Timeout(15)
 	void loadLotsOfPaths(@Autowired ARepository repository) {
 		assertThat(repository.doThings().bs).hasSize(84);
 	}
 
 	@Test
-	@Timeout(10)
+	@Timeout(15)
 	void loadLotsOfNode(@Autowired NodeRepository repository) {
 		assertThat(repository.findAll()).hasSize(300_000);
 	}
