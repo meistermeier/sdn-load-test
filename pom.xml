@@ -15,7 +15,6 @@
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
         <spring.version>5.3.16</spring.version>
         <spring-data-neo4j.version>6.2.2</spring-data-neo4j.version>
-        <spring.version>5.3.16</spring.version>
     </properties>
 
     <dependencies>
@@ -80,27 +79,6 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>current-snapshot</id>
-            <properties>
-                <spring-data-neo4j.version>6.2.3-SNAPSHOT</spring-data-neo4j.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>next</id>
-            <properties>
-                <spring-data-neo4j.version>6.3.0-SNAPSHOT</spring-data-neo4j.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>17</id>
-            <properties>
-                <spring-data-neo4j.version>7.0.0-SNAPSHOT</spring-data-neo4j.version>
-                <spring.version>6.0.0-M3</spring.version>
-            </properties>
-        </profile>
-    </profiles>
     <repositories>
         <repository>
             <id>spring-milestones</id>
